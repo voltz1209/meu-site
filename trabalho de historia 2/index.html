@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pele</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="logo-container">
+        </div>
+        <h1>Pelé: Ìcone do futebol e da igualdade Racial</h1>
+        <button id="start-quiz-btn" class="start-btn">Iniciar Quiz</button>
+        <div>
+            <label for="time-limit">Escolha o tempo por pergunta (em segundos):</label>
+            <input type="number" id="time-limit" value="10" min="5" max="30">
+        </div>
+    </div>
+
+    
+    <div id="quiz-screen" class="quiz-container" style="display: none;">
+        <h1>Pelé: Ìcone do futebol e da igualdade Racial</h1>
+        <div id="timer" class="timer">Tempo restante: 10s</div>
+        <form id="quizForm">
+            
+        </form>
+        <div class="buttons">
+            <button type="button" id="nextButton" class="next-btn" onclick="nextQuestion()">Próxima Pergunta</button>
+            <button type="button" id="restartBtn" class="restart-btn" onclick="restartQuiz()">Voltar ao Início</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
